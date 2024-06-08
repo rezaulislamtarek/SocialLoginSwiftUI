@@ -11,6 +11,9 @@
 		0BE058772C1466E0004F3286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE058762C1466E0004F3286 /* ContentView.swift */; };
 		0BE058792C1466E2004F3286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE058782C1466E2004F3286 /* Assets.xcassets */; };
 		0BE0587C2C1466E2004F3286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE0587B2C1466E2004F3286 /* Preview Assets.xcassets */; };
+		0BE058832C146741004F3286 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE058822C146741004F3286 /* View+Extension.swift */; };
+		0BE0588B2C1484F2004F3286 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE0588A2C1484F2004F3286 /* GoogleSignInButtonView.swift */; };
+		0BE0588D2C14869F004F3286 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BE0588C2C14869F004F3286 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		0BE058762C1466E0004F3286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BE058782C1466E2004F3286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BE0587B2C1466E2004F3286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BE058822C146741004F3286 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		0BE058842C147D93004F3286 /* SocialLoginSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialLoginSwiftUI.entitlements; sourceTree = "<group>"; };
+		0BE0588A2C1484F2004F3286 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
+		0BE0588C2C14869F004F3286 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +58,14 @@
 		0BE058732C1466E0004F3286 /* SocialLoginSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0BE0588C2C14869F004F3286 /* GoogleService-Info.plist */,
+				0BE058842C147D93004F3286 /* SocialLoginSwiftUI.entitlements */,
 				0BE058742C1466E0004F3286 /* SocialLoginSwiftUIApp.swift */,
 				0BE058762C1466E0004F3286 /* ContentView.swift */,
 				0BE058782C1466E2004F3286 /* Assets.xcassets */,
 				0BE0587A2C1466E2004F3286 /* Preview Content */,
+				0BE058822C146741004F3286 /* View+Extension.swift */,
+				0BE0588A2C1484F2004F3286 /* GoogleSignInButtonView.swift */,
 			);
 			path = SocialLoginSwiftUI;
 			sourceTree = "<group>";
@@ -83,6 +94,8 @@
 			dependencies = (
 			);
 			name = SocialLoginSwiftUI;
+			packageProductDependencies = (
+			);
 			productName = SocialLoginSwiftUI;
 			productReference = 0BE058712C1466E0004F3286 /* SocialLoginSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,8 @@
 				Base,
 			);
 			mainGroup = 0BE058682C1466E0004F3286;
+			packageReferences = (
+			);
 			productRefGroup = 0BE058722C1466E0004F3286 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE0587C2C1466E2004F3286 /* Preview Assets.xcassets in Resources */,
+				0BE0588D2C14869F004F3286 /* GoogleService-Info.plist in Resources */,
 				0BE058792C1466E2004F3286 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE058772C1466E0004F3286 /* ContentView.swift in Sources */,
+				0BE058832C146741004F3286 /* View+Extension.swift in Sources */,
 				0BE058752C1466E0004F3286 /* SocialLoginSwiftUIApp.swift in Sources */,
+				0BE0588B2C1484F2004F3286 /* GoogleSignInButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SocialLoginSwiftUI/SocialLoginSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SocialLoginSwiftUI/Preview Content\"";
@@ -280,12 +299,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bd.com.doctime.SocialLoginSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = bd.com.doctime.SocialLoginSwiftUIapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -298,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SocialLoginSwiftUI/SocialLoginSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SocialLoginSwiftUI/Preview Content\"";
@@ -309,12 +330,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bd.com.doctime.SocialLoginSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = bd.com.doctime.SocialLoginSwiftUIapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
