@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
- 
+import FacebookCore
+
 
 @main
 struct SocialLoginSwiftUIApp: App {
@@ -14,12 +15,21 @@ struct SocialLoginSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL { (url) in
+                    
+                    let _ = ApplicationDelegate.shared.application(
+                        UIApplication.shared,
+                        open: url,
+                        sourceApplication: nil,
+                        annotation: [UIApplication.OpenURLOptionsKey.annotation])
+                    
+                }
         }
     }
 }
 
 
- 
+
 
 
 

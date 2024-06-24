@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.804237676545-jacg4s8aaf4b2fjbmaab3srac56hgf92</string>
-			</array>
-		</dict>
-	</array>
+
+    <!-- Facebook Configuration -->
+    <key>FacebookAppID</key>
+    <string>961227112679588</string>
+    <key>FacebookDisplayName</key>
+    <string>SocialLoginSwiftUI</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+
+    <!-- Facebook URL Scheme -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb961227112679588</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.804237676545-jacg4s8aaf4b2fjbmaab3srac56hgf92</string>
+            </array>
+        </dict>
+    </array>
+
+    <key>FacebookClientToken</key>
+    <string>a114e66b4b01fb1b73ee83ebfa51937d</string>
+
 </dict>
 </plist>

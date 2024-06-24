@@ -20,7 +20,9 @@ struct ContentView: View {
 
             
             SocialButton(name: "Facebook Login", logo: "f.square", bgColor: .blue){
-                print("Clicked")
+                authHelper.loginWithFacebook { authStatus in
+                    self.authStatus = authStatus
+                }
             }
             
             SocialButton(name: "Google Login", logo: "g.circle", bgColor: .red.opacity(0.7)){

@@ -8,9 +8,12 @@
 import Foundation
 import Firebase
 import GoogleSignIn
+import FBSDKLoginKit
 
 class SocialAuthHelper : ObservableObject{
     @Published var isLoadingSuccessed = false
+    @Published var user: User?
+    private var loginManager = LoginManager()
     
     func signInWithGoogle(complited : @escaping (Bool)-> Void ){
         
@@ -36,6 +39,37 @@ class SocialAuthHelper : ObservableObject{
             
         }
     }
+    
+    func loginWithFacebook(completion: @escaping (Bool) -> Void) {
+            loginManager.logIn(permissions: ["public_profile","email"], from: nil) { result, error in
+                if let error = error {
+                    print("Failed to login: \(error.localizedDescription)")
+                    completion(false)
+                    return
+                }
+                
+               
+
+                guard let token = AccessToken.current else {
+                    print("Failed to get access token")
+                    completion(false)
+                    return
+                }
+
+                let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
+                Auth.auth().signIn(with: credential) { result, error in
+                    if let error = error {
+                        print("Failed to login: \(error.localizedDescription)")
+                        completion(false)
+                        return
+                    }
+
+                    self.user = result?.user
+                    print(self.user?.displayName)
+                    completion(true)
+                }
+            }
+        }
 }
 
 
