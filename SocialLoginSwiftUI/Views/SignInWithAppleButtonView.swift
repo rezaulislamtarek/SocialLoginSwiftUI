@@ -17,11 +17,10 @@ struct SignInWithAppleButtonView: View {
             switch result {
             case .success(let authorization):
                 if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
-                    let userIdentifier = appleIDCredential.user
-                    let fullName = appleIDCredential.fullName
-                    let email = appleIDCredential.email
+                    _ = appleIDCredential.user
+                    _ = appleIDCredential.fullName
+                    _ = appleIDCredential.email
                     res(true)
-                    
                 }
             case .failure(let error):
                 print("Error \(error)")

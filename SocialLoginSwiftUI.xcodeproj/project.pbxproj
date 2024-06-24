@@ -47,7 +47,6 @@
 		0BE058792C1466E2004F3286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE058782C1466E2004F3286 /* Assets.xcassets */; };
 		0BE0587C2C1466E2004F3286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE0587B2C1466E2004F3286 /* Preview Assets.xcassets */; };
 		0BE058832C146741004F3286 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE058822C146741004F3286 /* View+Extension.swift */; };
-		0BE0588B2C1484F2004F3286 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE0588A2C1484F2004F3286 /* GoogleSignInButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +62,6 @@
 		0BE0587B2C1466E2004F3286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BE058822C146741004F3286 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		0BE058842C147D93004F3286 /* SocialLoginSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialLoginSwiftUI.entitlements; sourceTree = "<group>"; };
-		0BE0588A2C1484F2004F3286 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB8A8F82C295466003D3593 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BB8A8F42C2939D4003D3593 /* SignInWithAppleButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BB8A8F92C2955EE003D3593 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0BB8A8F22C293993003D3593 /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		0BE058682C1466E0004F3286 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,8 @@
 		0BE058732C1466E0004F3286 /* SocialLoginSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0BB8A8F92C2955EE003D3593 /* Support */,
+				0BB8A8F82C295466003D3593 /* Views */,
 				0BB8A8EC2C293761003D3593 /* Info.plist */,
 				0BB8A8EA2C293743003D3593 /* GoogleService-Info.plist */,
 				0BE058842C147D93004F3286 /* SocialLoginSwiftUI.entitlements */,
@@ -135,9 +151,6 @@
 				0BE058782C1466E2004F3286 /* Assets.xcassets */,
 				0BE0587A2C1466E2004F3286 /* Preview Content */,
 				0BE058822C146741004F3286 /* View+Extension.swift */,
-				0BE0588A2C1484F2004F3286 /* GoogleSignInButtonView.swift */,
-				0BB8A8F22C293993003D3593 /* AppDelegate.swift */,
-				0BB8A8F42C2939D4003D3593 /* SignInWithAppleButtonView.swift */,
 				0BB8A8F62C2939EB003D3593 /* SocialAuthHelper.swift */,
 			);
 			path = SocialLoginSwiftUI;
@@ -266,7 +279,6 @@
 				0BE058752C1466E0004F3286 /* SocialLoginSwiftUIApp.swift in Sources */,
 				0BB8A8F52C2939D4003D3593 /* SignInWithAppleButtonView.swift in Sources */,
 				0BB8A8F32C293993003D3593 /* AppDelegate.swift in Sources */,
-				0BE0588B2C1484F2004F3286 /* GoogleSignInButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

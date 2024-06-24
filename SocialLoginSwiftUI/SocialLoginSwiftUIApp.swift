@@ -22,7 +22,6 @@ struct SocialLoginSwiftUIApp: App {
                         open: url,
                         sourceApplication: nil,
                         annotation: [UIApplication.OpenURLOptionsKey.annotation])
-                    
                 }
         }
     }
