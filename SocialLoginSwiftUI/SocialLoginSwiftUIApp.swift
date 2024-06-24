@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+ 
 
 @main
 struct SocialLoginSwiftUIApp: App {
+     
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
+
+ 
+
+
+
+
+
+

@@ -2,18 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>804237676545-jacg4s8aaf4b2fjbmaab3srac56hgf92.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.804237676545-jacg4s8aaf4b2fjbmaab3srac56hgf92</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBYEKqt9zl91YTded6z0Ji-hDTaJfMaoPA</string>
+	<string>AIzaSyBGpPOlZ_Ctc1GX9CLKCkM8FnxN3zz9cWY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1067440492091</string>
+	<string>804237676545</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>bd.com.doctime.SocialLoginSwiftUIapp</string>
+	<string>bd.com.doctime.SocialLoginApp</string>
 	<key>PROJECT_ID</key>
-	<string>sevensecsociallogintest</string>
+	<string>sociallogindemo-bf048</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sevensecsociallogintest.appspot.com</string>
+	<string>sociallogindemo-bf048.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1067440492091:ios:b6c83d610bd17b24fb161e</string>
+	<string>1:804237676545:ios:7f70fa40e29e3af990b000</string>
 </dict>
 </plist>
