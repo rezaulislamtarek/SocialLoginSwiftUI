@@ -14,7 +14,7 @@ struct SocialLoginSwiftUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentAppleButtonView()
                 .onOpenURL { (url) in
                     
                     let _ = ApplicationDelegate.shared.application(

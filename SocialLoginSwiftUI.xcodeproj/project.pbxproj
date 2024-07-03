@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2337D52C2D6793001CA761 /* ContentAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2337D42C2D6793001CA761 /* ContentAppleButtonView.swift */; };
 		0BB8A8B02C29366F003D3593 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB8A8AF2C29366F003D3593 /* FirebaseAnalytics */; };
 		0BB8A8B22C29366F003D3593 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB8A8B12C29366F003D3593 /* FirebaseAnalyticsOnDeviceConversion */; };
 		0BB8A8B42C29366F003D3593 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB8A8B32C29366F003D3593 /* FirebaseAnalyticsSwift */; };
@@ -42,6 +43,7 @@
 		0BB8A8F32C293993003D3593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB8A8F22C293993003D3593 /* AppDelegate.swift */; };
 		0BB8A8F52C2939D4003D3593 /* SignInWithAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB8A8F42C2939D4003D3593 /* SignInWithAppleButtonView.swift */; };
 		0BB8A8F72C2939EB003D3593 /* SocialAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB8A8F62C2939EB003D3593 /* SocialAuthHelper.swift */; };
+		0BDE46832C3563A000846722 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE46822C3563A000846722 /* facebook.png */; };
 		0BE058752C1466E0004F3286 /* SocialLoginSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE058742C1466E0004F3286 /* SocialLoginSwiftUIApp.swift */; };
 		0BE058772C1466E0004F3286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE058762C1466E0004F3286 /* ContentView.swift */; };
 		0BE058792C1466E2004F3286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE058782C1466E2004F3286 /* Assets.xcassets */; };
@@ -50,11 +52,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B2337D42C2D6793001CA761 /* ContentAppleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAppleButtonView.swift; sourceTree = "<group>"; };
 		0BB8A8EA2C293743003D3593 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BB8A8EC2C293761003D3593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BB8A8F22C293993003D3593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BB8A8F42C2939D4003D3593 /* SignInWithAppleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonView.swift; sourceTree = "<group>"; };
 		0BB8A8F62C2939EB003D3593 /* SocialAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthHelper.swift; sourceTree = "<group>"; };
+		0BDE46822C3563A000846722 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		0BE058712C1466E0004F3286 /* SocialLoginSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialLoginSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE058742C1466E0004F3286 /* SocialLoginSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginSwiftUIApp.swift; sourceTree = "<group>"; };
 		0BE058762C1466E0004F3286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,7 +113,10 @@
 		0BB8A8F82C295466003D3593 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0BE058822C146741004F3286 /* View+Extension.swift */,
+				0BE058762C1466E0004F3286 /* ContentView.swift */,
 				0BB8A8F42C2939D4003D3593 /* SignInWithAppleButtonView.swift */,
+				0B2337D42C2D6793001CA761 /* ContentAppleButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,11 +154,10 @@
 				0BB8A8EA2C293743003D3593 /* GoogleService-Info.plist */,
 				0BE058842C147D93004F3286 /* SocialLoginSwiftUI.entitlements */,
 				0BE058742C1466E0004F3286 /* SocialLoginSwiftUIApp.swift */,
-				0BE058762C1466E0004F3286 /* ContentView.swift */,
 				0BE058782C1466E2004F3286 /* Assets.xcassets */,
 				0BE0587A2C1466E2004F3286 /* Preview Content */,
-				0BE058822C146741004F3286 /* View+Extension.swift */,
 				0BB8A8F62C2939EB003D3593 /* SocialAuthHelper.swift */,
+				0BDE46822C3563A000846722 /* facebook.png */,
 			);
 			path = SocialLoginSwiftUI;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE0587C2C1466E2004F3286 /* Preview Assets.xcassets in Resources */,
+				0BDE46832C3563A000846722 /* facebook.png in Resources */,
 				0BE058792C1466E2004F3286 /* Assets.xcassets in Resources */,
 				0BB8A8EB2C293743003D3593 /* GoogleService-Info.plist in Resources */,
 			);
@@ -278,6 +285,7 @@
 				0BB8A8F72C2939EB003D3593 /* SocialAuthHelper.swift in Sources */,
 				0BE058752C1466E0004F3286 /* SocialLoginSwiftUIApp.swift in Sources */,
 				0BB8A8F52C2939D4003D3593 /* SignInWithAppleButtonView.swift in Sources */,
+				0B2337D52C2D6793001CA761 /* ContentAppleButtonView.swift in Sources */,
 				0BB8A8F32C293993003D3593 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
